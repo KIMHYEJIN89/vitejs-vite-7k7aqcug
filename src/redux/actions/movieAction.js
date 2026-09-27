@@ -139,7 +139,7 @@ function getDetailMovie(id) {
     //데이터 도착 전
     try {
       dispatch({ type: 'GET_MOVIES_REQUEST' }); // 로딩 true
-      //console.log('API_KEY', API_KEY);
+      //console.log('API_KEY', API_KEY)
 
       const detailMovieApi = api.get(`/movie/${id}?language=en-US&page=1`, {
         headers: {
