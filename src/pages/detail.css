@@ -1,0 +1,136 @@
+.movie-detail-section {
+  padding: 5rem 0;
+}
+
+.movie-detail-section .title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.movie-detail-section .movie-detail-item + .movie-detail-item {
+  margin-top: 1rem;
+}
+.movie-detail-section .poster {
+  width: 300px;
+  height: 450px;
+  margin: 0 auto;
+}
+
+.movie-detail-section .detail-genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.movie-detail-section .detail-genres div {
+  padding: 0 0.5rem;
+  background-color: red;
+  border-radius: 50px;
+}
+
+.movie-detail-section ul li {
+  display: flex;
+  align-items: center;
+}
+.movie-detail-section ul li + li {
+  margin-top: 1rem;
+}
+.movie-detail-section .tit {
+  display: block;
+  min-width: 100px;
+  margin-right: 20px;
+  padding: 0.3rem 0;
+  line-height: 1;
+  background-color: red;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.detail-overview {
+  padding: 0.5rem 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.detail-vote {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.detail-vote .item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.detail-vote .item::before {
+  display: inline-block;
+  content: '';
+  width: 25px;
+  height: 25px;
+  margin-right: 0.2rem;
+}
+.detail-vote .item1::before {
+  background: url('../src/assets/images/IMDB.png') no-repeat 0 0;
+  background-size: 25px auto;
+  vertical-align: center;
+}
+
+.detail-vote .item2::before {
+  background: url('../src/assets/images/people4.png') no-repeat 0 0;
+  background-size: 25px auto;
+  vertical-align: center;
+}
+
+.detail-vote .item3::before {
+  display: none;
+}
+.review-section {
+  padding: 2rem 0;
+}
+
+.review-section .review-wrapper {
+  padding: 1rem;
+  border: 1px solid red;
+  border-radius: 20px;
+}
+
+.review-section .review-wrapper + .review-wrapper {
+  margin-top: 1rem;
+}
+
+.review-section .review-cont {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.4rem;
+}
+
+.review-section .review-cont.open {
+  -webkit-line-clamp: unset;
+  /* display: block; */
+}
+
+.review-section .btn-more {
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  background: none;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.modal-body {
+  margin: 0 auto;
+}
+.modal-dialog .modal-content {
+  background-color: var(--bs-dark);
+}
+
+@media all and (max-width: 1200px) {
+  .movie-detail-section .col:last-child {
+    margin-top: 1rem;
+  }
+}

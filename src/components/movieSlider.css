@@ -1,0 +1,23 @@
+.carousel-container {
+  overflow-x: hidden;
+  overflow-y: visible;
+  height: 500px;
+}
+
+.react-multi-carousel-track {
+  height: 100%;
+}
+.react-multi-carousel-item {
+  padding: 0.25rem;
+}
+@media (max-width: 480px) {
+  .carousel-container {
+    height: 290px;
+    display: flex;
+    overflow-y: hidden;
+    justify-content: space-between;
+  }
+  .react-multi-carousel-track {
+    height: 100%;
+  }
+}
