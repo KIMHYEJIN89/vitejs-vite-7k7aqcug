@@ -29,7 +29,7 @@ const MovieDetailInfo = ({ detailMovies }) => {
             <span className="item item1">{detailMovies.vote_average}</span>
             <span className="item item2">{detailMovies.popularity}</span>
             <span className="item item3">
-              {detailMovies.adult ? (
+              {detailMovies.adult ? ( 
                 <img src="/src/assets/images/people4.png" width="25" />
               ) : (
                 <img src="/src/assets/images/under18.svg" width="25" />
